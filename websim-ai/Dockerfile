@@ -2,9 +2,7 @@ FROM ubuntu:18.04
 
 RUN apt update
 
-RUN DEBIAN_FRONTEND=noninteractive apt install -y python3 python-opencv python3-opencv ffmpeg imagemagick
-
-RUN DEBIAN_FRONTEND=noninteractive apt install -y chromium-browser python3-selenium chromium-chromedriver
+RUN DEBIAN_FRONTEND=noninteractive apt install -y python3 python-opencv python3-opencv ffmpeg imagemagick chromium-browser python3-selenium chromium-chromedriver
 
 # Replace 1000 with your user / group id
 RUN export uid=1000 gid=1000 && \
