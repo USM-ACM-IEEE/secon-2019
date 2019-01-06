@@ -1,0 +1,1 @@
+docker build -t mlaga97/opencv . && docker run -ti --rm -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix --security-opt seccomp=./chrome.json -v $PWD:/opencv mlaga97/opencv /usr/bin/python3 /opencv/main.py #/opencv/test.py
